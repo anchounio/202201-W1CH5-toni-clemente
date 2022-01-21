@@ -57,13 +57,13 @@ $lightblue: #15FFBC;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Oswald;
 }
 
 
 .header{
-    background-color: $lightblue;    
-    /*height: 80px*/
-    
+    background-color: $lightblue; 
+    /*height: 80px*/    
     padding: 10px;
 }
 
@@ -85,7 +85,61 @@ h1{
     display:none;
 }
 
+.video{
+    display:none;
+}
 
+.pink-car{
+    height: 100%;
+    width: 100%;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.main__text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}  
 footer{
     background-color: black;
+    color: $lightblue; 
+}
+
+
+
+@media (min-width: 600px){  /*A partir de 600 px*/
+
+    .video{
+        display:inline;        
+    }
+
+    .pink-car{
+        display: none;
+    }
+    .footer__top{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__bottom{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+
+    .footer h4{
+        margin-top:1em;
+    }
+
+
+    .footer__bottom-right{    
+        display:flex;
+        flex-direction: column;
+    }
 }
