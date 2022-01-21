@@ -82,8 +82,40 @@ h1 {
   display: none;
 }
 
+h1 {
+  display: none;
+  color: white;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   background-color: black;
+  color: #15FFBC;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h4 {
+  margin-top: 1em;
+}
+
+.footer__bottom-right {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
