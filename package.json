@@ -19,5 +19,8 @@
   "homepage": "https://github.com/anchounio/202201-W1CH5-toni-clemente#readme",
   "devDependencies": {
     "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "husky": "^7.0.4"
   }
 }
