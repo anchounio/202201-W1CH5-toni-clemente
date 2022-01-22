@@ -85,7 +85,12 @@ h1{
     display:none;
 }
 
-.video{
+
+main {
+    background-color: $lightblue; 
+}
+
+.video-desktop{
     display:none;
 }
 
@@ -94,32 +99,101 @@ h1{
     width: 100%;
 }
 
-.image{
+
+
+.main-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+} 
+
+.main-text__main-block{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    
+}
+
+.main-text p{
+    font-size: 2em;  
+    margin-top: 1em;  
+}  
+
+.main-text__underlined{
+    text-decoration: underline;
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+.images-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-box__image{
     height: 100%;
     width: 100%;
 }
 
-.main__text{
+
+
+
+footer{
+    background-color: black;
+    color: $lightblue;
     display:flex;
     flex-direction: column;
     align-items: center;
-}  
-footer{
-    background-color: black;
-    color: $lightblue; 
+}
+
+.footer-menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration:none;
+}
+
+footer h4{
+
+}
+
+
+/*ejemplo anidado de SASS*/
+.footer__bottom-left{
+    color:white;
+    h4{
+        color:white;
+    }
+    .nombreClase{
+        color:white;
+    }
 }
 
 
 
 @media (min-width: 600px){  /*A partir de 600 px*/
 
-    .video{
-        display:inline;        
+    .video-desktop{
+        display:flex;
+        width:100%;      
     }
 
     .pink-car{
         display: none;
     }
+
+    .footer-menu{
+        display:none;
+    }
+
     .footer__top{
         display:flex;
         flex-direction: column;

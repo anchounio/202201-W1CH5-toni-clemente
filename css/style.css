@@ -83,7 +83,11 @@ h1 {
   display: none;
 }
 
-.video {
+main {
+  background-color: #15FFBC;
+}
+
+.video-desktop {
   display: none;
 }
 
@@ -92,29 +96,85 @@ h1 {
   width: 100%;
 }
 
-.image {
-  height: 100%;
-  width: 100%;
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
 }
 
-.main__text {
+.main-text__main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.main-text p {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.main-text__underlined {
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.images-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.images-box__image {
+  height: 100%;
+  width: 100%;
+}
+
 footer {
   background-color: black;
   color: #15FFBC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/*ejemplo anidado de SASS*/
+.footer__bottom-left {
+  color: white;
+}
+.footer__bottom-left h4 {
+  color: white;
+}
+.footer__bottom-left .nombreClase {
+  color: white;
 }
 
 @media (min-width: 600px) {
   /*A partir de 600 px*/
-  .video {
-    display: inline;
+  .video-desktop {
+    display: flex;
+    width: 100%;
   }
 
   .pink-car {
+    display: none;
+  }
+
+  .footer-menu {
     display: none;
   }
 
