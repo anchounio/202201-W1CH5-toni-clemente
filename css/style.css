@@ -79,6 +79,10 @@ table {
   padding-right: 1em;
 }
 
+.navbar__menu-items {
+  display: none;
+}
+
 h1 {
   display: none;
 }
@@ -112,8 +116,12 @@ main {
 }
 
 .main-text p {
-  font-size: 2em;
+  font-size: 4em;
   margin-top: 1em;
+}
+
+.image-curl {
+  width: 40px;
 }
 
 .main-text__underlined {
@@ -141,30 +149,89 @@ footer {
   align-items: center;
 }
 
-.footer-menu {
+.footer__mobile h4 {
+  color: white;
+  margin-top: 2.2em;
+  margin-bottom: 0.9em;
+  font-size: 28px;
+}
+
+.footer__mobile p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 20px;
+}
+
+.footer__mobile__first {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer-menu a {
+.footer__mobile__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin: 2em;
+}
+
+.footer__mobile__menu a {
   color: white;
   text-decoration: none;
 }
 
-/*ejemplo anidado de SASS*/
-.footer__bottom-left {
-  color: white;
+.footer__mobile__block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer__bottom-left h4 {
-  color: white;
+
+.footer__mobile__social-media h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer__bottom-left .nombreClase {
-  color: white;
+
+.footer__mobile__social-media__containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-image {
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
+}
+
+.footer__mobile__block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__desktop {
+  display: none;
+}
+
+.footer__desktop__bottom {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.footer__desktop__bottom-right {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 600px) {
   /*A partir de 600 px*/
+  .navbar__menu-items {
+    display: flex;
+  }
+
   .video-desktop {
     display: flex;
     width: 100%;
@@ -174,28 +241,12 @@ footer {
     display: none;
   }
 
-  .footer-menu {
+  .footer__mobile {
     display: none;
   }
 
-  .footer__top {
+  .footer__desktop {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__bottom {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer h4 {
-    margin-top: 1em;
-  }
-
-  .footer__bottom-right {
-    display: flex;
-    flex-direction: column;
   }
 }
 
