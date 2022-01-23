@@ -71,13 +71,13 @@ a{
 
 .header{
     background-color: $lightblue; 
-    padding: 10px;
+    padding: 10px;    
 }
-
 
 .navbar-mobile{
     position:absolute;    
-}
+}    
+
 
 // --- DESKTOP NAVBAR STYLES ---
 
@@ -92,7 +92,9 @@ a{
     a{
         color: black;
     }
-
+    a:hover{
+        color:grey;
+    }
 }
 
 .navbar__menu-image{
@@ -116,21 +118,26 @@ main {
     background-color: $lightblue; 
 }
 
-.video-desktop{
-    display:none;
+
+.video-image-container{
+    &__video-desktop{
+        display:none;
+    }&__pink-car{
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.pink-car{
-    height: 100%;
-    width: 100%;
+
+.image-container{
+    &__about-image{
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
 }
 
 
-.about-image{
-    height: 100%;
-    width: 100%;
-    display: none;
-}
 
 
 .main-text{
@@ -138,33 +145,30 @@ main {
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    p{
+        font-size: 4em;  
+        margin-top: 1em;
+        text-align: center;        
+    }&__main-block{    
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 2em;
+        margin-bottom: 2em;        
+    }&__image-curl{
+        width: 40px;
+    }&__underlined{
+        text-decoration: underline;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }&__underlined:hover{
+        cursor:pointer;
+    }
 }
 
-.main-text__main-block{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    
-}
 
-.main-text p{
-    font-size: 4em;  
-    margin-top: 1em;
-    text-align: center;
-}  
 
-.main-text__image-curl{
-    width: 40px;
-}
-
-.main-text__underlined{
-    text-decoration: underline;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
 
 figcaption{
@@ -182,6 +186,11 @@ figcaption{
 .images-box__image{
     height: 100%;
     width: 100%;
+    transition: transform .2s;
+}
+
+.images-box__image:hover{
+    transform: scale(1.1);    
 }
 
 
@@ -189,6 +198,7 @@ figcaption{
 // FOOTER STYLES
 
 footer{
+    
     background-color: black;
     color: $lightblue;
     display:flex;
@@ -257,6 +267,9 @@ footer{
         margin-bottom: 0.9em;
         font-size: 28px;
         text-align: center;  
+    }p:hover{
+        color: rgb(126, 72, 72);
+        cursor:pointer;
     }
     &__top{
         margin-top: 0em;
@@ -308,10 +321,6 @@ footer{
 }
 
 
-
-
-
-
 // Work page styles
 
 .images-container{
@@ -320,7 +329,16 @@ footer{
     flex-direction: column;
 }
 
+.prueba{
+    transition: transform .2s;
+}
 
+.prueba:hover{
+    transform: scale(1.1); 
+}
+
+
+    
 
 // About page styles
 .about-text-blocks{
@@ -375,14 +393,14 @@ footer{
         display:flex;
     }
 
-    .video-desktop{
-        display:flex;
-        width:100%;      
-    }
-
-    .pink-car{
-        display: none;
-    }
+    .video-image-container{
+        &__video-desktop{
+                display:flex;
+                width:100%; 
+        }&__pink-car{
+            display: none;
+        }
+    }   
 
     .images-box{
         display:flex;
@@ -415,9 +433,14 @@ footer{
         text-align: center;
     }
 
-    .about-image{
-        display: flex;
+
+    .image-container{
+        &__about-image{
+            display: flex;    
+        }
     }
+
+
 
     .block-centered{
         margin-top: 3em;
