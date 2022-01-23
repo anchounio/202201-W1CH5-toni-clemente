@@ -56,13 +56,24 @@ table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Oswald;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
   background-color: #15FFBC;
   /*height: 80px*/
   padding: 10px;
+}
+
+.navbar-mobile {
+  position: absolute;
 }
 
 .navbarmenu {
@@ -118,6 +129,7 @@ main {
 .main-text p {
   font-size: 4em;
   margin-top: 1em;
+  text-align: center;
 }
 
 .image-curl {
@@ -128,6 +140,11 @@ main {
   text-decoration: underline;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+figcaption {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .images-box {
@@ -226,8 +243,18 @@ footer {
   flex-direction: column;
 }
 
+.images-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 @media (min-width: 600px) {
   /*A partir de 600 px*/
+  .navbar-mobile {
+    display: none;
+  }
+
   .navbar__menu-items {
     display: flex;
   }
@@ -247,6 +274,12 @@ footer {
 
   .footer__desktop {
     display: flex;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
   }
 }
 
