@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -67,7 +148,7 @@ a {
 }
 
 .header {
-  background-color: #15FFBC;
+  background-color: #15ffbc;
   padding: 10px;
 }
 
@@ -75,7 +156,7 @@ a {
   position: absolute;
 }
 
-.navbarmenu {
+.navbar-menu {
   list-style-type: none;
   display: flex;
   column-gap: 0.8em;
@@ -84,20 +165,18 @@ a {
   align-items: center;
   font-weight: bold;
 }
-.navbarmenu a {
+.navbar-menu a {
   color: black;
 }
-.navbarmenu a:hover {
+.navbar-menu a:hover {
   color: grey;
 }
-
-.navbar__menu-image {
+.navbar-menu__item {
+  display: flex;
+}
+.navbar-menu__image {
   padding-left: 2em;
   padding-right: 2em;
-}
-
-.navbar__menu-items {
-  display: none;
 }
 
 h1 {
@@ -105,7 +184,7 @@ h1 {
 }
 
 main {
-  background-color: #15FFBC;
+  background-color: #15ffbc;
 }
 
 .video-image-container__video-desktop {
@@ -176,7 +255,7 @@ figcaption {
 
 footer {
   background-color: black;
-  color: #15FFBC;
+  color: #15ffbc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +334,7 @@ footer {
 }
 .footer-desktop__top h4 {
   font-size: 40px;
-  color: #15FFBC;
+  color: #15ffbc;
 }
 .footer-desktop__top .footer-desktop__top__h4__line-through {
   text-decoration: line-through white;
@@ -354,8 +433,8 @@ footer {
     display: none;
   }
 
-  .navbar__menu-items {
-    display: flex;
+  .navbar-menu__item {
+    display: none;
   }
 
   .video-image-container__video-desktop {
